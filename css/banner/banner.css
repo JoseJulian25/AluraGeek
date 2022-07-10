@@ -1,7 +1,7 @@
 .banner__imagen{
     background: url(../../img/banner-image.png) no-repeat center / cover;
     width: 100%;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 18.75rem);
 }
 
 .banner__titulo{
