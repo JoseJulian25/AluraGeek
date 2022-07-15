@@ -103,4 +103,8 @@
     .productos__listas{
         width: calc(25% - 1em);
     }
+    
+    .productos__listas-off{
+        display: none;
+    }
 }
