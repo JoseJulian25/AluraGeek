@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.producto{
+    background-color: #f5f5f5;
+    padding: 4em 5em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.producto__imagen{
+    width: calc(50% - 5em);
+    
+}
+
+.producto__imagen-imagen{
+    width: 100%;
+}
+
+.producto__descripcion{
+    width: calc(50% - 4em);
+}
+
+.producto__descripcion-titulo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color: #464646;
+}
+
+.producto__descripcion-precio{
+    color: #464646;
+    font-weight: 700;
+    padding: 1em 0;
+    font-size: 1.3em;
+}
+
+.producto__descripcion-parrafo{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+@media (min-width: 375px) and (max-width:768px){
+    .producto{
+        flex-direction: column;
+        padding: 0;
+        }
+    .producto__imagen{
+        width: 100%;
+    }
+
+    .producto__descripcion{
+        width: 90%;
+        padding: 0;
+    }
+
+    .producto__descripcion-titulo{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .producto{
+        flex-direction: row;
+        padding: 1em 2em;
+        align-items:initial;
+    }
+
+    .producto__imagen{
+        width: calc(39% - 2em);
+    }
+
+    .producto__imagen-imagen{
+        height: 100%;
+    }
+
+    .producto__descripcion{
+        width: calc(64% - 1.61em);
+    }
+}

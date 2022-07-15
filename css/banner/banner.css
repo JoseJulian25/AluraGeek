@@ -1,7 +1,7 @@
 .banner__imagen{
     background: url(../../img/banner-image.png) no-repeat center / cover;
     width: 100%;
-    height: calc(100vh - 18.75rem);
+    height: calc(100vh - 18.75em);
 }
 
 .banner__titulo{
@@ -26,6 +26,11 @@
     cursor: pointer;
 }
 
+.banner__boton:hover{
+    transition: .5s;
+    background-color: #3386f3;
+}
+
 .banner__contenido{
     margin-left: 2rem ;
     width: 90%;
@@ -44,9 +49,5 @@
     }
     .banner__parrafo{
         font-size: 1.2rem;
-    }
-
-    .banner__boton{
-        padding:  .8rem 1rem ;
     }
 }
