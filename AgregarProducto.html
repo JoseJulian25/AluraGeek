@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/Nuevo-Producto/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <title>AgregarProducto</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="img/Logo.png" alt="" class="header__logo"></a> 
+         <form action="" class="header__form">
+             <input class="header__busqueda" type="text" name="search" autocomplete="off" placeholder="¿Que desea buscar?">
+                 <button class="form__boton"><i class="bi bi-search"></i></button>
+         </form>
+        <a class="header__link-boton" href="AllProductos.html"><button class="header__boton">Menu Admistrador</button></a> 
+     </header>
+    <main>
+        <section class="agregar-producto">
+            <form class="form" action="" data-form>
+                <div class="form__container">
+                    <div class="form__titulo-alerta">   
+                        <h2 class="form__title">Agregar nuevo producto</h2>
+                    </div>
+                    
+                    <div class="form__group">
+                        <input id="url" class="form__input" type="url" placeholder=" " data-imagen>
+                        <label class="form__label" for="url">Url de la imagen</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" id="categoria" placeholder=" " autocomplete="off" type="text" data-categoria>
+                        <label class="form__label" for="categoria">Categoria</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" id="name" placeholder=" " autocomplete="off" type="text" data-name>
+                        <label class="form__label" for="name">Nombre del producto</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" id="precio" placeholder=" " autocomplete="off" type="text" data-precio>
+                        <label class="form__label" for="precio">Precio del producto</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" id="descripcion" placeholder=" " autocomplete="off" type="text" data-descripcion>
+                        <label class="form__label" for="descripcion">Descripcion del producto</label>
+                        <span class="form__line"></span>
+                    </div>
+                    <div class="form__group-submit">
+                        <input class="form__submit" type="submit" value="Agregar producto">
+                        <i class="bi bi-plus-circle"></i>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="js/verificar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/Crear-producto.js"></script>
+</body>
+</html>

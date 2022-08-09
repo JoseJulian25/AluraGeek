@@ -1,0 +1,46 @@
+body{
+    font-family: "raleway", sans-serif;
+}
+
+main{
+    background-color: #f5f5f5;
+}
+
+.error{
+padding: 5rem 0;
+}
+
+.error__container{
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #b1acac;
+}
+
+.error__oops{
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #454545;
+}
+
+.bi-x-circle{
+    color: #d9534f;
+    font-size: 5rem;
+}
+
+.error__parrafo{
+    padding: 1rem 0 3rem 0;
+}
+
+.error__link{
+    padding: .7rem .5rem;
+    text-decoration: none;
+    color:  white;
+    background-color: #454545;
+    border: 1px solid #454545;
+    margin: 1rem 0;
+}
