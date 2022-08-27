@@ -1,0 +1,34 @@
+.filtrar-productos{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.filtrar-productos__lista{
+    position: relative;
+    background-color: #f5f5f5;
+    width: 33%;
+    margin-left: 2rem;
+    border-radius: 15px;
+}
+
+.productos-filtrados{
+    text-align: center;
+    padding: .5rem;
+    border-bottom: 1px solid #cfcccc;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.productos-filtrados:hover{
+    background-color: #dad8d8;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+.invisible{
+    display: none;
+}
+

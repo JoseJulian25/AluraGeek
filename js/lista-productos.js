@@ -17,13 +17,15 @@ const crearNuevoProducto = (imagen,nombre,precio,id) => {
 
     lista.innerHTML = contenido; 
 
+
+  //Eliminar producto
     const botonEliminar = lista.querySelector("[data-delete]")
     botonEliminar.addEventListener("click", (event) => {
         event.preventDefault();
 
         Swal.fire({
             title: '¿Estas seguro que deseas eliminar este producto?',
-            text: "No podras revertir esto!",
+            text: "No podras revertir este cambio!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',

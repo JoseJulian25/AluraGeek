@@ -31,6 +31,12 @@ const editarProducto = (imagen, categoria, nombre, precio, id) => {
         body: JSON.stringify({imagen, categoria, nombre, precio})
     })
     .then((respuesta) => respuesta)
+
+    
+}
+ const filtrarProducto = async () =>  {
+    const respuesta = await fetch("http://localhost:3000/producto")
+    return await respuesta.json();
 }
 
 
@@ -40,4 +46,5 @@ export const productosServices = {
     eliminarProducto,
     detalleProducto,
     editarProducto,
+    filtrarProducto,
 }

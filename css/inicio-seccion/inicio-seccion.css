@@ -84,6 +84,7 @@ main{
     border: none;
     border-radius: .5em;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .form__submit:hover{
@@ -92,19 +93,8 @@ main{
     background-color: #2d5ef1 ;
 }
 
-.form__line{
-    background-color: #2b5be9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    transform: scale(0);
-    transform: left bottom;
-}
-
-.form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line{
-    transform: scale(1);
+.form__input:focus{
+    border-bottom: 1px solid #2A7AE4;
 }
 
 @media (max-width: 425px){

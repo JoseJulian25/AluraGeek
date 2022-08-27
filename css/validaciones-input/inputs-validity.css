@@ -1,0 +1,16 @@
+.input-message-error{
+    font-size: .9rem;
+    color: #d9534f;
+}
+
+.validity{
+    background-color: #d9544f38;
+    color: #454545bd;
+}
+
+.form__input:focus + .validity-label, .form__input:not(:placeholder-shown) + .validity-label{
+    transform: translateY(16px) scale(.8);
+    transform-origin: left top;
+    color: #d9534f;
+}
+

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/inicio-seccion/inicio-seccion.css">
+    <link rel="stylesheet" href="css/Nuevo-Producto/inputs-validity.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,24 +17,24 @@
        <a href="index.html"><img class="header__logo" src="img/Logo.png" alt=""></a> 
     </header>
     <main>
-        <form action="" class="form">
+        <form action="" class="form form__submit-login">
         <div class="form__container">
-            <h2 class="form__titulo">Inicio Sesión</h2>
+            <h2 class="form__titulo">Inicio sesión</h2>
             <div class="form__group">
-                <input autocomplete="off" type="email" id="name" class="form__input" placeholder=" ">
+                <input autocomplete="off" type="email" id="name" class="form__input" placeholder=" " required data-tipo="email">
                 <label for="name" class="form__label">Correo electrónico</label>
-                <span class="form__line"></span>
+                <span class="input-message-error"></span>
             </div>
             <div class="form__group">
-                <input autocomplete="off" type="password" id="password" class="form__input" placeholder=" ">
+                <input autocomplete="off" type="password" id="password" class="form__input" placeholder=" " required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Mínimo ocho caracteres, al menos una letra, un numero y no puede contener caracteres especiales." data-tipo="password">
                 <label for="password" class="form__label">Contraseña</label>
-                <span class="form__line"></span>
+                <span class="input-message-error"></span>
             </div>
-            <input type="submit" class="form__submit" value="Entrar">
+            </a><input type="submit" class="form__submit" value="Entrar">
             </div>
         </div>
     </form>
     </main>
-    <script src="js/validacion.js"></script>
+    <script src="js/validaciones.js"></script>
 </body>
 </html>

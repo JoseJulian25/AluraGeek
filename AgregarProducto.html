@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header/header.css">
     <link rel="stylesheet" href="css/Nuevo-Producto/main.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Nuevo-Producto/inputs-validity.css">
     <title>AgregarProducto</title>
 </head>
 <body>
@@ -30,29 +32,29 @@
                     </div>
                     
                     <div class="form__group">
-                        <input id="url" class="form__input" type="url" placeholder=" " data-imagen>
+                        <input id="url" class="form__input" type="url" placeholder=" " data-imagen data-tipo="imagen" required>
                         <label class="form__label" for="url">Url de la imagen</label>
-                        <span class="form__line"></span>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="form__group">
-                        <input class="form__input" id="categoria" placeholder=" " autocomplete="off" type="text" data-categoria>
+                        <input class="form__input" id="categoria" placeholder=" " autocomplete="off" type="text" data-categoria data-tipo="categoria" pattern="[\s\S]{4,40}" required>
                         <label class="form__label" for="categoria">Categoria</label>
-                        <span class="form__line"></span>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="form__group">
-                        <input class="form__input" id="name" placeholder=" " autocomplete="off" type="text" data-name>
+                        <input class="form__input" id="name" placeholder=" " autocomplete="off" type="text" data-name data-tipo="nombre" pattern="[\s\S]{4,40}" required>
                         <label class="form__label" for="name">Nombre del producto</label>
-                        <span class="form__line"></span>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="form__group">
-                        <input class="form__input" id="precio" placeholder=" " autocomplete="off" type="text" data-precio>
+                        <input class="form__input" id="precio" placeholder=" " autocomplete="off" type="text" data-precio data-tipo="precio" required>
                         <label class="form__label" for="precio">Precio del producto</label>
-                        <span class="form__line"></span>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="form__group">
-                        <input class="form__input" id="descripcion" placeholder=" " autocomplete="off" type="text" data-descripcion>
+                        <input class="form__input" id="descripcion" placeholder=" " autocomplete="off" type="text" data-descripcion data-tipo="descripcion">
                         <label class="form__label" for="descripcion">Descripcion del producto</label>
-                        <span class="form__line"></span>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="form__group-submit">
                         <input class="form__submit" type="submit" value="Agregar producto">
@@ -62,9 +64,10 @@
             </form>
         </section>
     </main>
-    <script type="module" src="js/verificar.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="js/Crear-producto.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 </body>
 </html>

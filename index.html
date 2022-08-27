@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="css/banner/banner.css">
     <link rel="stylesheet" href="css/productos/productos.css">
     <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/filtrar-productos/filtrar.css">
+    <link rel="stylesheet" href="css/validaciones-input/inputs-validity.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo-control.png" type="image/x-icon">
     <title>AluraGeek</title>
 </head>
 <body>
-    <header class="header">
+    <header class="contenedor__header">
+        <div class="header">
             <img class="header__logo" src="img/Logo.png" alt="">
             <form action="" class="header__form">
                 <input class="header__busqueda" type="text" name="search" autocomplete="off" placeholder="¿Que desea buscar?">
@@ -24,6 +27,12 @@
                   </svg></i></button>
             </form>
         <a class="header__link-boton" href="inicio-sesion.html"><button class="header__boton">Login</button></a> 
+        </div>
+        <div class="filtrar-productos">
+            <ul id = "filtrar-productos__lista" class="filtrar-productos__lista">
+             
+            </ul>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -221,8 +230,10 @@
             </div>
             <form class="footer__form" action="">
                 <h3 class="footer__titulo">Hable con nosotros</h3>
-                <input class="footer__input" type="text" name="name" placeholder="Nombre" autocomplete="off" maxlength="40" required >
-                <textarea class="footer__input" type="text" placeholder="Escribe tu mensaje" rows="5" autocomplete="off" maxlength="120" required ></textarea>
+                <input class="footer__input" type="text" name="name" placeholder="Nombre" autocomplete="off" maxlength="40" data-name data-tipo="nombre" required>
+                <span class="input-message-error"></span>
+                <textarea class="footer__input" type="text" placeholder="Escribe tu mensaje" rows="5" autocomplete="off" maxlength="120" required data-tipo="mensaje" ></textarea>
+                <span class="input-message-error"></span>
                 <input class="footer__boton" type="submit">
             </form>
         </footer>
@@ -231,6 +242,8 @@
             <p>&copy; 2022</p>  
         </div>
     </main>
+    <script src="js/validaciones.js"></script>
+    <script type="module" src="js/filtrar-productos.js"></script>
     <script type="module" src="js/adjuntar-productos.js"></script>
 </body>
 </html>
