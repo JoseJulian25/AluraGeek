@@ -7,7 +7,7 @@ const crearNuevoProducto = (imagen,nombre,precio,id) => {
     const contenido = `<img class="productos__imagen" src="${imagen}" alt="">
     <div class="productos__iconos">
         <i class="bi bi-trash3-fill" id="${id}" data-delete></i>
-       <a href="../editar-Producto.html?id=${id}"><i class="bi bi-pencil-fill"></i></a>
+       <a href="editar-Producto.html?id=${id}"><i class="bi bi-pencil-fill"></i></a>
     </div>
     <div class="productos__textos">
         <span class="producto__clase">${nombre}</span>
