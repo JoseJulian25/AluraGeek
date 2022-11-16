@@ -8,7 +8,7 @@ const obtenerIformacion = () => {
     const id = url.searchParams.get("id");
 
     if (id == null ){
-        window.location.href = "../error.html"
+        window.location.href = "error.html"
     }
 
     const imagen = document.querySelector("[data-imagen]");
