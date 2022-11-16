@@ -76,5 +76,5 @@ const submitLogin = document.querySelector(".form__submit-login")
 
 submitLogin.addEventListener("submit", (event) => {
     event.preventDefault();
-    window.location.href = "../AllProductos.html"
+    window.location.href = "AllProductos.html"
 })
