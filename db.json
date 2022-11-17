@@ -1,23 +1,9 @@
 {
   "producto": [
     {
-      "imagen": "https://techcrunch.com/wp-content/uploads/2019/06/nintendo-wii.jpg",
-      "categoria": "Consolas",
-      "nombre": "Nintendo Wii",
-      "precio": "60.00$",
-      "id": "49dd4b37-1690-4c12-bdf5-f1a0267269ae"
-    },
-    {
-      "imagen": "https://techcrunch.com/wp-content/uploads/2019/06/nintendo-wii.jpg",
-      "categoria": "Peliculas",
-      "nombre": "Pepito",
-      "precio": "50.00$",
-      "id": "1c1be9bc-43df-4e3e-a9c7-9eb1377d01d3"
-    },
-    {
       "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bb0142c9-70a8-461e-8e0d-cc1490d66825/d2fpn6y-9c694f88-5a71-43f5-8991-773f9ba1e6db.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JiMDE0MmM5LTcwYTgtNDYxZS04ZTBkLWNjMTQ5MGQ2NjgyNVwvZDJmcG42eS05YzY5NGY4OC01YTcxLTQzZjUtODk5MS03NzNmOWJhMWU2ZGIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Vj4EyYJ7YdOjtfPuFOza9BX4rGAT_gEIQL5I_T6NS24",
       "categoria": "Melon",
-      "nombre": "Caperusita Roja",
+      "nombre": "Naruto",
       "precio": "50.00$",
       "id": "0c1c943b-084c-45c3-ac24-acd94258050d"
     },

@@ -107,3 +107,39 @@ padding: .5rem;
     transition: .3s;
 }
 
+@media (min-width: 0px) and (max-width: 768px){
+    main{
+        padding: 3rem 2rem;
+    }
+    
+    .productos__navegacion{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .productos__listas{
+        width: calc(50% - 1rem);
+    }
+
+    .productos__imagen{
+        width: 100%;
+    }
+
+    .productos__contenido{
+       width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        padding: 3rem 2rem;
+    }
+
+    .productos__listas{
+        width: calc(25% - 2rem);
+    }
+
+    .productos__imagen{
+        width: 100%;
+    }
+}
